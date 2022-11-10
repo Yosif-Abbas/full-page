@@ -1,0 +1,152 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background: #eee;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #555;
+}
+
+.wrapper{
+    margin-inline: auto;
+    max-width: 80%;
+    background: #ccc;
+}
+
+main{
+    padding: 0 2em;
+}
+
+// header styling
+
+header{
+    padding-block: 2rem;
+    background: #ccc;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+header h1{
+    margin-left: 0.5rem;
+}
+
+header h1 a{
+    font-size: 2rem;
+    color: #b12c2c;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 0.75rem;
+    position: relative;
+}
+
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    height: 2px;
+    width: 0;
+    background: #000;
+}
+
+header ul li a:hover{
+    font-weight: 700;
+}
+
+header ul li a:hover::before{
+    width: 60%;
+    transition: width 0.25s ease;
+}
+
+// styling main => section boxes
+
+main .sec-boxes{
+    display: flex;
+    gap: 1rem;
+}
+
+main .sec-boxes .box{
+    background: #B58487;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+}
+
+main .sec-boxes .box .button{
+    outline: none;
+    border: none;
+    background: #b12c2c;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.25rem 1.15rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+main .sec-boxes .box .button:hover{
+    background: #c12c2c;
+}
+
+// styling main => section events
+
+main .sec-events .articles{
+    display: flex;
+    gap: 1rem;
+}
+
+main .sec-events .articles article{
+    background: #B58487;
+    text-align: center;
+    color: #fff;
+    padding: 0.25rem 1.15rem;   
+    border-radius: 12px;
+}
+
+// Styling main => section projects
+
+main .sec-projects .articles{
+    display: flex;
+    gap: 1rem;
+}
+
+main .sec-projects article{
+    background-color: #B58487;
+    color: #fff;
+    border-radius: 12px;
+    padding: 0.25rem 1.15rem;
+    text-align: center;
+}
+
+
